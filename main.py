@@ -18,6 +18,7 @@ def main():
     print('LDA data:', LDA_shapiro_wilk_test)
     wilcoxon = mannwhitneyu(dframe2['Arrival delay in minutes'], dframe1['Arrival delay in minutes'], alternative='greater')
     print(wilcoxon)
+    print('test')
     return
 
 if __name__ == '__main__':
