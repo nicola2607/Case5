@@ -16,7 +16,7 @@ def main():
     LDA_shapiro_wilk_test = shapiro(dframe2['log'])
     print('FlyUIBK data:', FlyUIBK_shapiro_wilk_test)
     print('LDA data:', LDA_shapiro_wilk_test)
-    wilcoxon = mannwhitneyu(dframe2['Arrival delay in minutes'], dframe1['Arrival delay in minutes'], alternative='less')
+    wilcoxon = mannwhitneyu(dframe2['Arrival delay in minutes'], dframe1['Arrival delay in minutes'], alternative='greater')
     print(wilcoxon)
     return
 
